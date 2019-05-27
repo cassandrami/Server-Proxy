@@ -1,0 +1,21 @@
+Cassandra Graham
+cmg539
+CS 460, Fall 2018
+Lab03
+cmg539_webserver.py
+
+This program runs with the command "python3 cmg539_webserver.py --port <port num>"
+
+I removed all the comments that were included in the original starter file.
+All comments included are my own.
+
+The program, rudimentarily:
+
+-creates a socket
+-binds it to the port (command line argument)
+-handles the request string
+  -parses the data from the request, sorts into dictionary and appropriate variables
+  -checks if data is formatted incorrectly
+  -checks if the request type is "GET"
+  -finds and opens the file path if able, uploads
+-closes the socket
